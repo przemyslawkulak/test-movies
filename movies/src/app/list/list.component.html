@@ -1,3 +1,6 @@
-<p>
-  list works!
-</p>
+<h3>
+  Click on movie to show details
+</h3>
+<div class='movie' *ngFor="let movie of movies;">
+<img src='assets/{{movie.title | lowercase}}.jpg' width='100'/>
+</div>
