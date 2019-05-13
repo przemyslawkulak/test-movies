@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { DetailsComponent } from './details/details.component';
 
+import { MoviesService } from './movies.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,7 @@ import { DetailsComponent } from './details/details.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MoviesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
