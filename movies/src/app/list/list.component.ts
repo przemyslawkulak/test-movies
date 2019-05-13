@@ -17,5 +17,6 @@ export class ListComponent implements OnInit {
     this.movies = this.mS.allMovies();
     console.table(this.movies)
   }
+ 
 
 }
