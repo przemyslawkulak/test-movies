@@ -6,4 +6,10 @@ from api.models import Movie
 class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
+        fields = ['id', "poster"]
+
+
+class MovieFullSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Movie
         fields = ['id', 'title', 'description', 'year', "poster"]
