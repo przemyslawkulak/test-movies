@@ -2,5 +2,5 @@
   Click on movie to show details
 </h3>
 <div class='movie' *ngFor="let movie of movies;" routerLink='movie/{{movie.id}}'>
-<img src='assets/{{movie.title | lowercase}}.jpg' width='100'/>
+<img src='{{movie.poster}}' width='100'/>
 </div>
