@@ -14,7 +14,14 @@ export class ListComponent implements OnInit {
   constructor( private mS:MoviesService) { }
 
   ngOnInit() {
-    this.movies = this.mS.allMovies();
+    this.mS.allMovies().subscribe(
+      (data)=>{
+        this.movies = data;
+      },
+      (error) => {
+        console.log(error);
+      }
+      );
     console.table(this.movies)
   }
  
