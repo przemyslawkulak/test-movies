@@ -10,6 +10,7 @@ import { MoviesService } from '../movies.service'
 export class ListComponent implements OnInit {
 
   movies: Movie[];
+  message: String = '';
 
   constructor( private mS:MoviesService) { }
 
@@ -19,6 +20,7 @@ export class ListComponent implements OnInit {
         this.movies = data;
       },
       (error) => {
+        this.message = "Error. Try again later.";
         console.log(error);
       }
       );

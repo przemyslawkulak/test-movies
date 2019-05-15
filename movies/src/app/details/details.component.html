@@ -1,4 +1,6 @@
+<div *ngIf="movie">
 <img src='{{baseUrl}}{{movie.poster}}' width='200'/>
 <h1>{{movie.title}} ({{movie.year}})</h1>
 <p>{{movie.description}}</p>
 <button (click)='back()'>Back</button>
+</div>
