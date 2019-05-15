@@ -1,4 +1,4 @@
-<img src='assets/{{movie.title | lowercase}}.jpg' width='200'/>
+<img src='{{baseUrl}}{{movie.poster}}' width='200'/>
 <h1>{{movie.title}} ({{movie.year}})</h1>
 <p>{{movie.description}}</p>
 <button (click)='back()'>Back</button>
